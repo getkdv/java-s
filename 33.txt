@@ -1,0 +1,22 @@
+public T setvalue(T a, Q b)
+{
+        
+       this.a=a;
+       this.b=b;
+       return a;
+}
+public Q getvalue()
+{
+      System.out.println(""+a);
+      System.out.println(""+b);
+      return b;
+}
+public static void main(String[] args) 
+{
+    Gen_ex<Integer,String> obj=new Gen_ex<>();
+    obj.setvalue(25, "Hello");
+    obj.getvalue();
+    Gen_ex<String,Integer> obj1=new Gen_ex<>();
+    obj1.setvalue("Bye", 52);
+    obj1.getvalue();
+}
